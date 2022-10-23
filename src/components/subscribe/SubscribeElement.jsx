@@ -7,6 +7,10 @@ export const SubscribeModal = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: 70% 30%;
+
+  @media screen and (max-width: 768px){
+    grid-template-columns: 100%;
+  }
 `
 
 export const ModalContent = styled.div`
@@ -56,6 +60,25 @@ export const ModalContent = styled.div`
   text-align: justify;
   padding: 10px 0;
  }
+
+ @media screen and (max-width: 768px){
+    p{
+      width: 100%;
+      font-size: 15px;
+    }
+
+    h4{font-size: 17px; width: 100%; color: rgba(19, 9, 155, 0.719);}
+
+    form{
+      input{
+        width: 65%;
+      }
+
+      button{
+       width: 35%;
+      }
+    }
+ }
 `
 
 export const LeftContent = styled.div`
@@ -68,5 +91,8 @@ export const LeftContent = styled.div`
   padding: 13px 0;
   font-size: 18px;
   color: #050458;
+ }
+ @media screen and (max-width: 768px){
+  margin-left: 20px;
  }
 `

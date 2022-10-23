@@ -25,14 +25,6 @@ function Home() {
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui dignissimos mollitia molestias explicabo cumque itaque quod, totam tempore ullam repellat nihil dicta iste, est magnam impedit dolore quos.</p>
                   </div>
                   <a href="/all-exchanges">Exchange Units</a>
-              </HomeItem>  
-              <HomeItem>
-                  <img src={netImg} alt="" />
-                  <h1>Earning Team</h1>
-                  <div>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui dignissimos mollitia molestias explicabo cumque itaque quod, totam tempore ullam repellat nihil dicta iste, est magnam impedit dolore quos.</p>
-                  </div>
-                  <a href="/">Join Team</a>
               </HomeItem> 
               <HomeItem>
                   <img src={nftImg} alt="" />
@@ -41,7 +33,15 @@ function Home() {
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui dignissimos mollitia molestias explicabo cumque itaque quod, totam tempore ullam repellat nihil dicta iste, est magnam impedit dolore quos.</p>
                   </div>
                   <a href="/nfts">Available NFTs</a>
-              </HomeItem> 
+              </HomeItem>
+              <HomeItem>
+                  <img src={netImg} alt="" />
+                  <h1>Earning Team</h1>
+                  <div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui dignissimos mollitia molestias explicabo cumque itaque quod, totam tempore ullam repellat nihil dicta iste, est magnam impedit dolore quos.</p>
+                  </div>
+                  <a href="/">Join Team</a>
+              </HomeItem>  
         </HomeContent>
     </HomeWrapper>
   )

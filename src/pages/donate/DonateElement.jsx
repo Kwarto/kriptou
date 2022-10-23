@@ -27,6 +27,12 @@ min-height: 100vh;
         width: 60%;
       }
     }
+
+    @media screen and (max-width: 768px){
+      p{
+        width: 85%;
+      }
+    }
 }
 
 .donate-with-purpose{
@@ -73,6 +79,11 @@ min-height: 100vh;
           font-size: 15px;
         }
       }
+  }
+
+
+  @media screen and (max-width: 768px){
+    flex-direction: column;
   }
 }
 `
@@ -155,6 +166,32 @@ export const DonateContent = styled.div`
       a{
         color: #f1f1f1;
         font-weight: 600;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    min-height: 60vh;
+    .support{
+      top: 5rem;
+      p{
+        width: 100%;
+      }
+    }
+
+    &:after{
+      display: none;
+      width: 25%;
+    }
+
+    .cta{
+      
+      h1{
+        font-size: 30px;
+      }
+
+      .btn{
+        margin-top: 20px;
       }
     }
   }

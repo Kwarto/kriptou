@@ -9,7 +9,7 @@ function NftHeader() {
          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, corrupti, quae molestias expedita eos magni, nostrum consectetur dolorum officia neque culpa ipsam repellendus excepturi et ducimus sit adipisci distinctio? Nulla.
         </p>
         <div className="hero-btn">
-         <a href="/">Check All NFTs</a>
+         <a href="/all-nfts">Check All NFTs</a>
         </div>
       </HeaderContent>    
     </NftHeaderWrapper>

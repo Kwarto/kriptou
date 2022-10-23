@@ -17,10 +17,10 @@ function CoinExchange() {
         <h2 className='ex-title'>Available Exchange Units</h2>   
         <CoinExchangeWrapper>
           {
-            cryptoList.map((exchange, index) => {
+            cryptoList.map((exchange, id) => {
                 return (
                     <ExchangeWrapper>
-                    <Trade key={index}>
+                    <Trade key={id}>
                         <div className="exchange">
                         <div className='flex'>
                             <p>#{exchange.trust_score_rank}.</p>
