@@ -1,0 +1,1 @@
+https://newsapi.org/v2/everything?q=crypto&from=2022-09-17&sortBy=publishedAt&apiKey=f679c22ee8614297a5e1a7a77076a230

@@ -1,0 +1,37 @@
+{
+    "cSpell.words": [
+        "Alkalami",
+        "allnfts",
+        "Coinswiper",
+        "csupply",
+        "dbox",
+        "decentra",
+        "donorbox",
+        "homesection",
+        "Krip",
+        "Kriptou",
+        "msupply",
+        "nameid",
+        "nftheader",
+        "nftsdetails",
+        "sparkline",
+        "startdecentral",
+        "Swiper",
+        "tsupply",
+        "USTD",
+        "webm",
+        "whykriptou"
+    ],
+    "cSpell.enableFiletypes": [
+        "bat",
+        "code-text-binary",
+        "coffeescript",
+        "dart",
+        "diff",
+        "raw",
+        "sass",
+        "vb"
+    ],
+    "cSpell.language": "en,lorem",
+    "typescript.tsdk": "node_modules/typescript/lib"
+}
