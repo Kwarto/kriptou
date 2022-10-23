@@ -132,7 +132,7 @@ width: 100%;
         width: 100%;
         margin: 0 1rem;
         p{
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 600;
             text-align: center;
         }

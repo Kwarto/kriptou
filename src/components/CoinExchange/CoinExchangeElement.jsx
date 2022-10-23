@@ -72,5 +72,14 @@ export const Trade = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 768px){
+     .flex{
+        padding: 20px 8px;
+        p{
+            font-size: 14px;
+        }
+     }
+   }
  }
 `

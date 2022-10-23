@@ -9,7 +9,7 @@ function Header() {
        <HeaderWrapper>
          <HeaderContent>
           <h1 className='head'> Kriptou Ticker <span><FaCheck /></span></h1> 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente corrupti tempore quod culpa saepe veritatis, itaque consectetur, asperiores aliquam non iusto ullam. Deleniti, doloremque tempora.</p>
+          <p>Local cryptocurrency market tracker. Track your favorite crypto currencies and focus on analyzing, researching and trading and to assisting investors to find reliable information about the latest cryptocurrency in the market</p>
           <a href='/'>Read More</a>
         </HeaderContent>
          <HeaderImgWrapper>

@@ -105,7 +105,7 @@ export const HomeItem = styled.div`
     padding: 10px 20px;
     border-radius: 50px;
     position: relative;
-    top: 12px;
+    top: 2.1rem;
     color: hsl(212deg 93% 24%);
     border: 1px dotted hsl(212deg 93% 24%);
     font-weight: 600;
@@ -123,5 +123,11 @@ export const HomeItem = styled.div`
    transform: translate(0);
  } 
 
+ }
+
+ @media screen  and (max-width: 768px){
+   a{
+   top: 20px;
+   }
  }
 `

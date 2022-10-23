@@ -37,13 +37,13 @@ export const CoinList = styled.div`
     .name{
         color: hsl(193deg 74% 57%);
     }
-    .about, .cap, .vol{
+    .about, .cap{
         display: flex;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px dotted green;
         margin: 10px 0;
-        padding: 8px;
+        padding: 10px;
         text-transform: capitalize;
          
         a{
@@ -59,7 +59,14 @@ export const CoinList = styled.div`
         }
 
         @media screen and (max-width: 768px){
-          display: block;
+          display: flex;
+          font-size: 14px;
+          padding: 15px 8px;
+          .vol_span{
+            h5{
+            text-align: right;
+            }
+          }
         }
     }
     .about{

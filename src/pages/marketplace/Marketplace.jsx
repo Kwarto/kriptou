@@ -72,28 +72,26 @@ function Marketplace() {
                     </div>
                     <div className='about'>
                       <span>
-                       <h5>(ms) {coin.max_supply}</h5>
-                       <h5>(ts) {coin.total_supply}</h5>
+                       <h5>Max_s: {coin.max_supply}</h5>
+                       <h5>Tot_s: {coin.total_supply}</h5>
                       </span>
-                      <h5>(Calc S) {coin.circulating_supply}</h5>
+                      <h5>Circ_S: {coin.circulating_supply}</h5>
                     </div>
                   
                     
                     <div className='cap'>
-                        <h4>(M-Cap) {coin.market_cap}</h4>
+                        <h5>M_Cap: {coin.market_cap}</h5>
                         <span>
-                        <h5 className={`${coin.price_change_24h > 0 ? 'text-red' : 'text-green'}`}>(24HR) {coin.price_change_24h}</h5>
+                        <h5 className={`${coin.price_change_24h > 0 ? 'text-red' : 'text-green'}`}>24HR: {coin.price_change_24h}</h5>
                      </span>
                     </div>
                     
-                    <div className='vol'>
-                        <span>
-                        <h5>(V24) {coin.total_volume}</h5>
-                        </span>
-                        <span>
-                        <h5>CP: ${coin.current_price}</h5>
-                        <h5>Updated: {coin.last_updated}</h5>
-                        </span>
+                    <div className='cap'>
+                       <h5>Vol24: {coin.total_volume}</h5>
+                       <h5>CP: ${coin.current_price}</h5>
+                    </div>
+                    <div className='vol_span'>
+                      <h6>Last updated: {coin.last_updated}</h6>
                     </div>
 
                     </CoinList>

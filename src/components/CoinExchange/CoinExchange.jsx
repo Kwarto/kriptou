@@ -27,10 +27,10 @@ function CoinExchange() {
                             <img src={exchange.image} alt={exchange.name} />
                         </div>
                         <div className='flex'>
-                                <p className='g-ico'>
-                                    <FaGlobe />
-                                    {exchange.country}
-                                </p>
+                         <p className='g-ico'>
+                          <FaGlobe />
+                          {exchange.country}
+                         </p>
                          <p className='name'><a href={`${exchange.url}`} target="_blank" rel="noopener noreferrer">{exchange.name }</a></p>
                         </div>
                         <div className="flex">
@@ -38,8 +38,8 @@ function CoinExchange() {
                          <p className={`${exchange.trade_volume_24h_btc > 0 ?'text-red' : 'text-green'}}`}>TVN. {exchange.trade_volume_24h_btc_normalized}</p> 
                         </div>
                         <div className="flex">
-                        <p>#TS. {exchange.trust_score}</p>
-                        <p>EST. {exchange.year_established}</p>
+                         <p>#TS. {exchange.trust_score}</p>
+                         <p>EST. {exchange.year_established}</p>
                         </div>
                     </div>
                     </Trade>

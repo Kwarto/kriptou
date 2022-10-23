@@ -9,7 +9,7 @@ function Footer() {
           <div className="footer_item a">
             <h1>Kriptou</h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum odio laborum quibusdam tempora dolores alias?
+            Kriptou is a community driven platform that brings together new people from around the world to learn about cryptocurrency
             </p>
             <h3>Get Updates</h3>
             <div className="socials">
