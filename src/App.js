@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Circles from './components/circle/Circles';
 import RouterNavigation from './router/RouterNavigation'
 function App() {
   const [loading, setLoading] = useState(false)
@@ -6,11 +7,13 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(true)
-    }, 3000)
+    }, 300)
   }, [])
   return (
     <>
-      <RouterNavigation />
+      {
+        !loading ? <Circles />  :<RouterNavigation /> 
+      }
     </>
   );
 }
