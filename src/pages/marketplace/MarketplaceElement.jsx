@@ -101,6 +101,7 @@ export const TopList = styled.div`
 box-shadow: 0 10px 10px rgba(0, 0, 255, 0.062);
 padding: 10px;
 border-radius: 10px;
+min-height: 30vh;
 div{
     display: flex;
     justify-content: space-between;
@@ -124,6 +125,7 @@ div{
 
 export const Logo = styled.div`
 padding: 15px 10px;
+margin-top: 30px;
  span{
     display: flex;
     align-items: center;
