@@ -30,7 +30,13 @@ const trend = [
      descImg: trendImg,
      head: 'All_Exchanges',
      logoImg: excImg
-    }
+    },
+    {
+      title: 'Top Market',
+      descImg: trendImg,
+      head: 'All_NFTs',
+      logoImg: nftImg
+     }
 ]
 function Marketplace() {
     const [cryptoList, setCryptoList] = useState([]);
@@ -71,7 +77,7 @@ function Marketplace() {
             1200: {
               width: 1200,
               slidesPerView: 3,
-              spaceBetween: 40
+              spaceBetween: 50
             },
           }}
           autoplay={{ delay: 5000, disableOnInteraction: false }}>
