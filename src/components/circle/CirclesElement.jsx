@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
-export const CirclesWrapper = styled.div`
+export const LottieWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  min-height: 100vh;
 `
+
+// export const Loader = styled.div`
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// `

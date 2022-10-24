@@ -1,21 +1,16 @@
-import { useState,useEffect } from 'react';
-import RouterNavigation from "./router/RouterNavigation";
-import Circles from './components/circle/Circles';
+import React, { useState, useEffect } from 'react';
+import RouterNavigation from './router/RouterNavigation'
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(false)
+
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  }, []);
+      setLoading(true)
+    }, 3000)
+  }, [])
   return (
     <>
-      {
-        isLoading ?
-        <Circles />
-      :
-       <RouterNavigation />
-      }
+      <RouterNavigation />
     </>
   );
 }

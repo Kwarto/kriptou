@@ -1,20 +1,24 @@
 import React from 'react'
-import { Circles } from 'react-loader-spinner'
-import { CirclesWrapper } from './CirclesElement'
-import loaderImg from '../../images/Loader.png'
-function Circle() {
+import Lottie from 'react-lottie';
+import {LottieWrapper} from './CirclesElement'
+import * as animationData from '../../images/cryptocurrency-lottie-animation.json'
+
+const Circles = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
+
+  
   return (
-      <CirclesWrapper>
-        <Circles
-        type='Puff'
-        color='rgba(17, 4, 129, 0.801)'
-        height='100vh'
-        width={100}
-        timeout={3000}
-        className='my-circle'/>
-        <img src={loaderImg} alt="loader vector"/>
-      </CirclesWrapper>
+    <LottieWrapper>
+       <Lottie options={defaultOptions} height={250} width={250} />
+    </LottieWrapper>
   )
 }
 
-export default Circle
+export default Circles

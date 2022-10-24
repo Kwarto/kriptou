@@ -40,7 +40,7 @@ function Navbar() {
                       <a href="/derivatives">Derivatives</a> 
                   </NavItem> 
                   <NavItem>
-                      <a href="/all-exchanges">Exchange Units</a> 
+                      <a href="/all_exchanges">Exchange Units</a> 
                   </NavItem>  
                   <NavItem>
                       <a href="/nfts">NFTs</a> 
@@ -49,7 +49,7 @@ function Navbar() {
                       <a href="/derivatives/exchange">Derivatives Exchange</a> 
                   </NavItem> 
                   <NavItem>
-                      <a href="news-and-updates">News & Updates</a> 
+                      <a href="news_and_updates">News & Updates</a> 
                   </NavItem> 
                   <NavItem>
                   <a href="/subscribe">Subscribe Newsletter</a> 

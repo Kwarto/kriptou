@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 import NewsItem from '../../components/NewsItem/NewsItem';
 import { NewsWrapper } from './NewsElement';
+import Circles from '../../components/circle/Circles';
 const date = new Date();
 function News() {
     const [articles, setArticles] = useState([]);
@@ -12,6 +13,15 @@ function News() {
         }
         getArticles()
     }, [])
+    if (articles.length === 0) { 
+        return (
+            <>
+              <div className='a-loader'>
+                <Circles className='loader'/>
+              </div>
+            </>
+          )
+    }else{
   return (
       <NewsWrapper>
          {articles.map((article) => {
@@ -29,6 +39,7 @@ function News() {
         
       </NewsWrapper>
   )
+    }
 }
 
 export default News

@@ -16,7 +16,7 @@ function Home() {
                   <div>
                       <p>The Kriptou News brings you the latest cryptocurrency news in less than 5 minutes a day. Join us to stay ahead, on the pulse of the digital currency community.</p>
                   </div>
-                  <a href="/news-and-updates">Join News</a>
+                  <a href="/news_and_updates">Join News</a>
               </HomeItem>  
               <HomeItem>
                   <img src={earnImg} alt="" />
@@ -24,7 +24,7 @@ function Home() {
                   <div>
                       <p>Kriptou provides best cryptocurrency exchange unit that connects you to your favorite crypto-currency. It's super easy to start, and after a few simple steps, you'll be trading in your favorite coin</p>
                   </div>
-                  <a href="/all-exchanges">Exchange Units</a>
+                  <a href="/all_exchanges">Exchange Units</a>
               </HomeItem> 
               <HomeItem>
                   <img src={nftImg} alt="" />

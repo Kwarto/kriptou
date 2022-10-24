@@ -104,6 +104,15 @@ code {
   }
 }
 
-@media screen and (max-width: 768px){
+.preloader{
+  display: flex;
+  align-items: center;
+}
 
+.a-loader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 0 auto;
 }

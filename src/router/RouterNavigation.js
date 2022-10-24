@@ -25,11 +25,11 @@ function RouterNavigation() {
             <Route path="/derivatives" element={<Derivatives />} />
             <Route path="/derivatives/exchange" element={<DEchange />} />
             <Route path="/coin/:id" element={<CoinDetails />} />
-            <Route path="/all-exchanges" element={<AllExchanges />} />
-            <Route path="/all-nfts" element={<AllNfts />} />
+            <Route path="/all_exchanges" element={<AllExchanges />} />
+            <Route path="/all_nfts" element={<AllNfts />} />
             <Route path="/nfts" element={<NFTs />} />
             <Route path="/nfts/:id" element={<NFTsDetails />} />
-            <Route path="/news-and-updates" element={<News />} />
+            <Route path="/news_and_updates" element={<News />} />
             <Route path="/subscribe" element={<Subscribe />} />
             <Route path="/donate" element={<Donate />} />
           </Routes>

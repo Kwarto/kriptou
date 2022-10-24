@@ -1,12 +1,37 @@
 import React, {useEffect, useState} from 'react'
-import { MarketTopNews, MarketplaceWrapper, CoinList, TopList, Logo } from './MarketplaceElement'
+import { MarketTopNews, MarketplaceWrapper, CoinList, TopList, Logo} from './MarketplaceElement'
 import trendImg from '../../images/TrendingIcon.png'
 import nftImg from '../../images/NFT_Icon.png'
 import derivateImg from '../../images/derivatives.png'
 import excImg from '../../images/exchange.png'
 import Axios from 'axios'
 import CoinExchange from '../../components/CoinExchange/CoinExchange'
-// import { Link } from 'react-router-dom'
+import {Autoplay} from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import Circles from '../../components/circle/Circles'
+
+const trend = [
+    {
+     title: 'Top Market',
+     descImg: trendImg,
+     head: 'NFTs',
+     logoImg: nftImg
+    },
+    {
+     title: 'Top Market',
+     descImg: trendImg,
+     head: 'Derivatives',
+     logoImg: derivateImg
+    },
+    {
+     title: 'Top Market',
+     descImg: trendImg,
+     head: 'All_Exchanges',
+     logoImg: excImg
+    }
+]
 function Marketplace() {
     const [cryptoList, setCryptoList] = useState([]);
     useEffect(() => {
@@ -16,53 +41,70 @@ function Marketplace() {
             setCryptoList(response.data)
         });
     }, []);
-  return (
+  if (cryptoList.length === 0) {
+    return (
       <>
-        <MarketTopNews>
-            <TopList>
-                  <div>
-                   <h4>Top Markets <span>
-                          <img src={trendImg} alt='trending' /></span></h4>
-                    <a href='/nfts'>More</a>
-                  </div>       
-                  <Logo>
-                      <img src={nftImg} alt="bitcoin logo" width='28%' />
+        <div className='a-loader'>
+          < Circles className='loader'/>
+        </div>
+      </>
+    )
+  } else {
+    return (
+      <>
+          <MarketTopNews>
+          <Swiper className='head_slider'
+           // install Swiper modules
+           modules={[Autoplay]}
+          //  slidesPerView={4}
+          breakpoints={{
+            414: {
+              width: 414,
+              slidesPerView: 1,
+              spaceBetween: 55
+            },
+            768: {
+              width: 768,
+              slidesPerView: 2,
+              spaceBetween: 10
+            },
+            1200: {
+              width: 1200,
+              slidesPerView: 3,
+              spaceBetween: 40
+            },
+          }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}>
+            {
+             trend.map(({title, descImg, head, logoImg}, index) => {
+               return(
+                   <SwiperSlide key={index}>
+                    <TopList>
+                    <div>
                       <span>
-                          <p>NFTs</p>
+                       <h4>{title}</h4>
+                       <img src={descImg} alt='trending' />
                       </span>
-                  </Logo>
-              </TopList>
-              <TopList>
-                  <div>
-                   <h4>Top Markets <span>
-                          <img src={trendImg} alt='trending' /></span></h4>
-                    <a href="/derivatives">More</a>
-                  </div>       
-                  <Logo>
-                      <img src={derivateImg} alt="bitcoin logo" width='28%' />
+                      <a href={`${head.toLocaleLowerCase()}`}>More</a>
+                    </div>
+                     <Logo>
+                      <img src={logoImg} alt="bitcoin logo" width='28%' />
                       <span>
-                          <p>Derivatives</p>
+                          <p>{head}</p>
                       </span>
-                  </Logo>
-              </TopList>
-              <TopList>
-                  <div>
-                   <h4>Top Markets <span>
-                          <img src={trendImg} alt='trending' /></span></h4>
-                    <a href="/all-exchanges">More</a>
-                  </div>       
-                  <Logo>
-                      <img src={excImg} alt="bitcoin logo" width='28%' />
-                      <span>
-                          <p>Exchange</p>
-                      </span>
-                  </Logo>
-            </TopList>
+                     </Logo> 
+                    </TopList>   
+                  </SwiperSlide>
+               ) 
+             })
+            }
+            
+          </Swiper>
         </MarketTopNews>
         <MarketplaceWrapper>
         {cryptoList.map((coin, index) => {
             return (
-                <CoinList key={index}>
+                   <CoinList key={index}>
                     <div className='about'>
                     <span className='t-abt'>
                      <h5>#{coin.market_cap_rank}</h5>
@@ -102,6 +144,8 @@ function Marketplace() {
       </>
   )
 }
+  }
+  
 
 export default Marketplace
 

@@ -5,21 +5,25 @@ padding: 10px 0;
 width: calc(100% - 30px);
 margin: 10px auto;
 display: grid;
-grid-template-columns: repeat(3, 1fr);
 gap: 1rem;
 transform: translateY(4.2rem);
 
 @media screen and (max-width: 768px){
+ width: 100%;
+ overflow-x: scroll;
  grid-template-columns: 1fr;
 }
 `
-
 export const MarketplaceWrapper = styled.div`
  padding: 100px 1.2%;
  display: grid;
- grid-template-columns: repeat(3, 2fr);
+ grid-template-columns: repeat(3, 1fr);
  gap: 1.5rem;
  place-items: center;
+
+ @media screen and (max-width: 1024px){
+  grid-template-columns: 1fr 1fr;
+ }
  @media screen and (max-width: 768px){
   grid-template-columns: 1fr;
  }
@@ -98,6 +102,11 @@ div{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    span{
+        display: flex;
+        align-items: center;
+        gap: 0 1rem;
+    }
 }
  h4{
     display: flex;
@@ -122,5 +131,8 @@ padding: 15px 10px;
         font-size: 20px;
         font-weight: 600;
     }
+ }
+
+ @media screen and (max-width: 768px){
  }
 `
