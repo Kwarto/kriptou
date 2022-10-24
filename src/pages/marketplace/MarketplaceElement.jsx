@@ -8,6 +8,9 @@ display: grid;
 gap: 1rem;
 transform: translateY(4.2rem);
 
+.head_slider{
+    margin: 0 auto;
+}
 @media screen and (max-width: 768px){
  width: 100%;
  overflow-x: scroll;

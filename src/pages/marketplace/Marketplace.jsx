@@ -30,13 +30,7 @@ const trend = [
      descImg: trendImg,
      head: 'All_Exchanges',
      logoImg: excImg
-    },
-    {
-      title: 'Top Market',
-      descImg: trendImg,
-      head: 'All_NFTs',
-      logoImg: nftImg
-     }
+    }
 ]
 function Marketplace() {
     const [cryptoList, setCryptoList] = useState([]);
@@ -58,8 +52,8 @@ function Marketplace() {
   } else {
     return (
       <>
-          <MarketTopNews>
-          <Swiper className='head_slider'
+        <MarketTopNews>
+         <Swiper className='head_slider'
            // install Swiper modules
            modules={[Autoplay]}
           //  slidesPerView={4}
