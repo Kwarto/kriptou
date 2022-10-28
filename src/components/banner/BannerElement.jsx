@@ -9,6 +9,7 @@ export const Container = styled.div`
   @media screen and (max-width: 1024px){
     width: 100%;
     padding: 80px 0;
+    overflow: hidden;
   }
 `;
 export const Entity = styled.div`
@@ -34,10 +35,9 @@ export const Inner = styled.div`
   flex-direction: column;
   display: flex;
   @media screen and (max-width: 768px){
-    width: 410px;
+    width: 380px;
     margin: 0 auto;
-    overflow-x: hidden;
-    padding: 5px 5px;
+    padding: 5px 0px;
   }
 `;
 export const Question = styled.div`
