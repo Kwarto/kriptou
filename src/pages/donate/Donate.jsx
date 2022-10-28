@@ -1,14 +1,18 @@
 import React from 'react'
 import { AiFillApi } from 'react-icons/ai'
 import {GrSystem, GrUserWorker} from 'react-icons/gr'
+import Footer from '../../components/footer/Footer'
+import Navbar from '../../components/navbar/Navbar'
 import { DonateWrapper, DonateContent } from './DonateElement'
 function Donate() {
   return (
-    <DonateWrapper>
+    <>
+      <Navbar />
+       <DonateWrapper>
       <DonateContent>
         <div className="support">
           <h1>Support My Works</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores rerum, blanditiis id, quasi repellat et cum ea libero fuga dolorem similique ad distinctio obcaecati quam incidunt molestias optio? Repellat, aut.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores rerum, blanditiis id, quasi repellat et cum ea libero fuga dolorem similique ad distinctio obcaecati quam incidunt molestias optio? Repellat.</p>
         </div>
       </DonateContent>
       <div className="give">
@@ -41,7 +45,9 @@ function Donate() {
         </div>
         </div>
       </DonateContent>
-    </DonateWrapper>
+       </DonateWrapper>
+      <Footer />
+    </>
   )
 }
 

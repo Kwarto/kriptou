@@ -1,9 +1,10 @@
 import {React, useState} from 'react'
 import { NavbarWrapper, LogoWrapper, NavListWrapper, NavItem } from './NavbarElement'
-import { FaBars, FaHeart } from 'react-icons/fa'
+import { FaBars, FaHeart, FaTimes } from 'react-icons/fa'
 import logoImg from '../../images/logo_krip.png'
+import { Link } from 'react-router-dom'
 function Navbar() {
-
+    const [isMobile, setIsMobile] = useState(false)
     const [fix, setFix] = useState(false);
 
     function setFixed() {
@@ -19,9 +20,12 @@ function Navbar() {
       <>
           <NavbarWrapper className={fix ? 'fixed' : 'not-fixed'}>
               <LogoWrapper>
-                  <img src={logoImg} alt='logo' />
+                  <Link to='/'><img src={logoImg} alt='logo' /></Link>
               </LogoWrapper>
-              <NavListWrapper>
+                <NavListWrapper
+                  onClick={() => setIsMobile(true)}
+                  className={isMobile ? "nav-links-mobile" : "nav-links"}
+                >
                   <NavItem>
                      <a href="/">Home</a> 
                   </NavItem>
@@ -52,12 +56,21 @@ function Navbar() {
                       <a href="news_and_updates">News & Updates</a> 
                   </NavItem> 
                   <NavItem>
-                  <a href="/subscribe">Subscribe Newsletter</a> 
+                   <a href="/subscribe">Subscribe Newsletter</a> 
+                  </NavItem>
+                  <NavItem>
+                   <a href="/t&c">Whitepapers</a> 
+                  </NavItem>
+                  <NavItem>
+                   <a href="/faqs">FAQs</a> 
+                  </NavItem>
+                  <NavItem>
+                   <a href="/about_us">About</a> 
                   </NavItem>
                   </div>
               </NavListWrapper>
-              <div className='menu-bars'>
-                  <FaBars className='f-menu'/>
+              <div className='menu-bars' onClick={() => setIsMobile(!isMobile)}>
+                  {isMobile ?  <FaTimes className='f-menu'/> : <FaBars className='f-menu'/>}
               </div>
           </NavbarWrapper>
       </>

@@ -3,6 +3,8 @@ import { NftWrapper, NftList } from './NFTsElement'
 import NftHeader from '../../components/nftheader/NftHeader'
 import Axios from 'axios'
 import StartNft from '../../components/startdecentral/StartNft';
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 function NFTs() {
     const [nftList, setNftList] = useState([]);
     useEffect(() => {
@@ -14,6 +16,7 @@ function NFTs() {
     }, []);
     return (
         <>
+        <Navbar />
          <NftHeader />
          <NftWrapper>    
           {nftList.map((nfts, index) => {
@@ -37,6 +40,7 @@ function NFTs() {
          </div>
          </NftWrapper>
          <StartNft />
+         <Footer />
         </>
   )
 }

@@ -3,6 +3,8 @@ import { DetailsWrapper } from './NFTsDetailsElement'
 import Coinswiper from '../../components/coinswiper/Coinswiper'
 import { useParams } from 'react-router-dom';
 import Axios  from 'axios';
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 function NFTsDetails() {
     const { id } = useParams();
     const [nftsList, setNftsList] = useState([]);
@@ -19,6 +21,7 @@ function NFTsDetails() {
     }, []);
   return (
       <>
+      <Navbar />
        <DetailsWrapper>
          <div className='left'>
           <h2>{nftsList.id}</h2>
@@ -39,7 +42,8 @@ function NFTsDetails() {
           </span>
          </div>
           </DetailsWrapper>
-          <Coinswiper />
+      <Coinswiper />
+      <Footer />
       </>
   )
 }

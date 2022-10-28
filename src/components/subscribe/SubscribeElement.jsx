@@ -8,6 +8,9 @@ export const SubscribeModal = styled.div`
   display: grid;
   grid-template-columns: 70% 30%;
 
+  @media screen and (max-width: 1024px){
+   min-height: 60vh;
+  } 
   @media screen and (max-width: 768px){
     grid-template-columns: 100%;
   }
@@ -19,7 +22,7 @@ export const ModalContent = styled.div`
   display: flex;
   align-items: center;
   input{
-    padding: 12px 10px;
+    padding: 13px 10px;
     width: 45%;
     outline: none;
     border: 1px solid blue;
@@ -59,6 +62,14 @@ export const ModalContent = styled.div`
   width: 80%;
   text-align: justify;
   padding: 10px 0;
+ }
+
+ @media screen and (max-width: 1024px){
+  form{
+    button{
+      width: 25%;
+    }
+  }
  }
 
  @media screen and (max-width: 768px){

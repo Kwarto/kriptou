@@ -60,18 +60,21 @@ export const FooterWrapper = styled.div`
         }
 
         .socials{
-          padding: 20px 0;
+          padding: 10px 0;
          .s_icon{
             margin: 10px;
-            font-size: 28px;
+            font-size: 20px;
             background: rgba(22, 22, 190, 0.918);
             color: #fff;
             cursor: pointer;
             padding: 8px;
-            width: 45px;
-            height: 45px;
+            width: 35px;
+            height: 35px;
             border-radius: 50px;
             box-shadow: 0 10px 10px rgba(45, 241, 248, 0.075);
+            :nth-child(1){
+             margin-left: 0;
+            }
           }
         }
     }

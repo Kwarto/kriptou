@@ -3,6 +3,8 @@ import Coinswiper from '../../components/coinswiper/Coinswiper'
 import { FaGlobe } from 'react-icons/fa'
 import Axios from 'axios'
 import {CoinExchangeWrapper, ExchangeWrapper, Trade} from './AllExchangesElement'
+import Footer from '../../components/footer/Footer'
+import Navbar from '../../components/navbar/Navbar'
 function AllExchanges() {
     const [cryptoList, setCryptoList] = useState([]);
     useEffect(() => {
@@ -14,7 +16,8 @@ function AllExchanges() {
         // eslint-disable-next-line
     }, []);
     return (
-       <> 
+        <>
+        <Navbar />     
         <CoinExchangeWrapper>
           {
             cryptoList.map((exchange, index) => {
@@ -48,7 +51,8 @@ function AllExchanges() {
             })
           }
         </CoinExchangeWrapper>
-          <Coinswiper />  
+       <Coinswiper />  
+        <Footer />   
        </>        
     )}
 

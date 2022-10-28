@@ -11,6 +11,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import Circles from '../../components/circle/Circles'
+import Navbar from '../../components/navbar/Navbar'
+import Footer from '../../components/footer/Footer'
 
 const trend = [
     {
@@ -52,6 +54,7 @@ function Marketplace() {
   } else {
     return (
       <>
+        <Navbar />
         <MarketTopNews>
          <Swiper className='head_slider'
            // install Swiper modules
@@ -140,7 +143,8 @@ function Marketplace() {
             )
         })}  
           </MarketplaceWrapper>
-          <CoinExchange />
+        <CoinExchange />
+        <Footer />
       </>
   )
 }

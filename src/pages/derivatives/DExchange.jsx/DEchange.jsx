@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { DEchangeWrapper } from './DExchangeElement'
 import Axios from 'axios'
 import Circles from '../../../components/circle/Circles';
+import Navbar from '../../../components/navbar/Navbar';
+import Footer from '../../../components/footer/Footer';
 function DEchange() {
   const [cryptoList, setCryptoList] = useState([]);
   useEffect(() => {
@@ -22,7 +24,9 @@ function DEchange() {
     )
   } else {
     return (
-      <DEchangeWrapper>
+      <>
+        <Navbar />
+        <DEchangeWrapper>
         {
           cryptoList.map((exchange, id) => {
             return (
@@ -40,7 +44,9 @@ function DEchange() {
             )
           })
         }
-      </DEchangeWrapper>
+        </DEchangeWrapper>
+        <Footer />
+      </>
     )
   }
 }

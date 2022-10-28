@@ -22,7 +22,7 @@ function Footer() {
           <div className="footer_item">
             <h1>Information</h1>
             <p>
-              <a href="/about">About Us</a>
+              <a href="/donate">Support</a>
             </p>
             <p>
               <a href="/subscribe">NewsLetter</a>
@@ -34,18 +34,18 @@ function Footer() {
 
           <div className="footer_item">
             <h1>Company</h1>
-            <p><a href="/our-team">Our Team</a></p>
+            <p><a href="/about_us">About Us</a></p>
+            <p><a href="/our_team">Our Team</a></p>
             <p><a href="/career">Career</a></p>
-            <p><a href="/donate">Support</a></p>
             <p><a href="/t&c">Teams & Conditions</a></p>
-            <p><a href="/">Privacy Policy</a></p>
+            <p><a href="/privacy_policy">Privacy Policy</a></p>
           </div>
 
           <div className="footer_item">
             <h1>Contact Us</h1>
             <span>
               <FaEnvelope className='c_icon'/>
-              <p>supportkriptou@gmail.com</p>
+              <p>dev.kriptou@gmail.com</p>
             </span>
             <span>
               <FaMapMarked className='c_icon'/>

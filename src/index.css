@@ -5,6 +5,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  transition: all 2s ease;
 }
 html{
   user-select: none;

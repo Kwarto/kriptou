@@ -60,6 +60,7 @@ min-height: 100vh;
     h3{
       font-size: 22px;
       padding: 10px 0;
+      text-transform: uppercase;
     }
     p{
       line-height: 1.6;
@@ -91,7 +92,7 @@ export const DonateContent = styled.div`
   position: relative;
   padding: 10px 0;
   margin: 0 auto;
-  background: linear-gradient(rgba(1, 3, 26, 0.87), rgba(103, 9, 226, 0.082)), url(${donateImg});
+  background: linear-gradient(rgba(1, 3, 26, 0.904), rgba(103, 9, 226, 0.315)), url(${donateImg});
   background-position: 100%;
   background-size: cover;
   background-attachment: fixed;

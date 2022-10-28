@@ -21,8 +21,8 @@ export const WhyContent = styled.div`
  gap: 3rem;
 
  @media screen and (max-width: 1024px){
-    grid-template-columns: 1fr 1fr;
-    margin: 0;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
  }
 
  @media screen and (max-width: 768px){
@@ -48,7 +48,7 @@ export const WhySideImg = styled.div`
 
  @media screen and (max-width: 1024px){
     img{
-     position: relative;
+     display: none;
      margin-left: 2%;
      left: 5rem;
      :nth-child(2){
@@ -60,8 +60,7 @@ export const WhySideImg = styled.div`
 
  @media screen and (max-width: 768px){
     img{
-    display: none;
-    width: 40%;
+     width: 40%;
      position: relative;
      margin-left: 0;
      left: 5rem;

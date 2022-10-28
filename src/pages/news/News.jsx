@@ -3,6 +3,8 @@ import axios from 'axios'
 import NewsItem from '../../components/NewsItem/NewsItem';
 import { NewsWrapper } from './NewsElement';
 import Circles from '../../components/circle/Circles';
+import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 const date = new Date();
 function News() {
     const [articles, setArticles] = useState([]);
@@ -23,7 +25,9 @@ function News() {
           )
     }else{
   return (
-      <NewsWrapper>
+    <>
+      <Navbar />
+       <NewsWrapper>
          {articles.map((article) => {
          return (
             <div>
@@ -37,7 +41,9 @@ function News() {
            )
           })}
         
-      </NewsWrapper>
+       </NewsWrapper>
+      <Footer />
+    </>
   )
     }
 }

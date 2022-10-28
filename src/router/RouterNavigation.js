@@ -1,12 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from '../components/navbar/Navbar'
 import Subscribe from '../components/subscribe/Subscribe';
 import Home from '../pages/home/Home'
 import Marketplace from '../pages/marketplace/Marketplace'
 import Derivatives from '../pages/derivatives/Derivatives'
 import Donate from '../pages/donate/Donate'
-import Footer from '../components/footer/Footer';
 import CoinDetails from '../components/CoinDetails/CoinDetails';
 import AllExchanges from '../pages/exchanges/AllExchanges';
 import NFTs from '../pages/nfts/NFTs';
@@ -14,11 +12,12 @@ import AllNfts from '../pages/allnfts/AllNfts';
 import NFTsDetails from '../pages/nftsdetails/NFTsDetails';
 import News from '../pages/news/News';
 import DEchange from '../pages/derivatives/DExchange.jsx/DEchange';
+import FAQs from '../pages/faqs/FAQs';
+import About from '../components/about/About';
 function RouterNavigation() {
   return (
       <>
-          <Router>
-           <Navbar />
+       <Router>
            <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/marketplace" element={<Marketplace />} />
@@ -30,11 +29,12 @@ function RouterNavigation() {
             <Route path="/nfts" element={<NFTs />} />
             <Route path="/nfts/:id" element={<NFTsDetails />} />
             <Route path="/news_and_updates" element={<News />} />
+            <Route path="/about_us" element={<About />} />
             <Route path="/subscribe" element={<Subscribe />} />
             <Route path="/donate" element={<Donate />} />
+            <Route path="/faqs" element={<FAQs />} />
           </Routes>
-          <Footer />
-        </Router>
+       </Router>
       </>
 
   )
