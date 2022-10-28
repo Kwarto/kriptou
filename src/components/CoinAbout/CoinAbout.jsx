@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react' 
-import {DetailWrapper, CoinText, LeftWrapper} from './CoinAboutElement'
+import { DetailWrapper, CoinText, LeftWrapper } from './CoinAboutElement'
+import Navbar from '../../components/navbar/Navbar'
+import Footer from '../../components/footer/Footer'
 import Axios from 'axios'
 import { useParams } from 'react-router-dom';
 
@@ -16,6 +18,7 @@ function CoinAbout() {
     }, []);
   return (
       <>
+          <Navbar />
           <DetailWrapper>
               <CoinText>
                   <div className="left">
@@ -54,6 +57,7 @@ function CoinAbout() {
                   <p>Last Updated <small>{ cryptoList.last_updated}</small></p>
               </LeftWrapper>
           </DetailWrapper>
+          <Footer />
       </>
   )
 }
