@@ -6,7 +6,7 @@ function About() {
   return (
     <>
      <Navbar />
-     <AboutWrapper>
+      <AboutWrapper>
        <AboutHeader>
         <h1>About Us</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam tempore ipsum quibusdam sapiente aut error, fugiat soluta a nihil beatae pariatur aliquid, dolorem laborum quasi similique magnam eos dolores exercitationem?</p>
@@ -14,7 +14,7 @@ function About() {
          <a href="/">Learn More</a>
         </div>
        </AboutHeader>
-     </AboutWrapper> 
+      </AboutWrapper> 
      <Footer />   
     </>
   )

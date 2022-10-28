@@ -26,7 +26,7 @@ function DEchange() {
     return (
       <>
         <Navbar />
-        <DEchangeWrapper>
+         <DEchangeWrapper>
         {
           cryptoList.map((exchange, id) => {
             return (
@@ -44,7 +44,7 @@ function DEchange() {
             )
           })
         }
-        </DEchangeWrapper>
+         </DEchangeWrapper>
         <Footer />
       </>
     )

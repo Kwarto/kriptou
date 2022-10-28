@@ -1,10 +1,13 @@
 import React from 'react'
 import { SubscribeModal, ModalContent, LeftContent } from './SubscribeElement'
 import TickerWidget from '../Widget/TickerWidget'
+import Navbar from '../navbar/Navbar'
+import Footer from '../footer/Footer'
 function Subscribe() {
   return (
     <>
-          <SubscribeModal>
+      <Navbar />
+      <SubscribeModal>
         <ModalContent>
          <h2>Getting Started</h2>
          <h4>Tell me about new features, trending and latest cryptocurrencies in the market</h4>
@@ -25,6 +28,7 @@ function Subscribe() {
         </LeftContent>
       </SubscribeModal>
       <TickerWidget />
+      <Footer />
     </>
   )
 }

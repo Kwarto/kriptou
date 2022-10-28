@@ -4,7 +4,6 @@ import Circles from '../../components/circle/Circles'
 import Axios from 'axios'
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
-// import { Link } from 'react-router-dom'
 function Derivatives() {
     const [cryptoList, setCryptoList] = useState([]);
     useEffect(() => {

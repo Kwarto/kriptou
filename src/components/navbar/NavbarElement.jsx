@@ -110,7 +110,7 @@ export const NavItem = styled.li`
  }
 
  @media screen and (max-width: 1024px) {
-   padding: 10px 40px;
+   padding: 10px 30px;
    width: 90%;
    margin: 10px 20px;
    text-align: start;
