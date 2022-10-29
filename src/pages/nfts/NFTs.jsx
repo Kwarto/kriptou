@@ -36,7 +36,7 @@ function NFTs() {
             )
           })}
          <div className='cta'>
-            <a href="/all-nfts">More NFTs</a>
+            <a href="/all_nfts">More NFTs</a>
          </div>
          </NftWrapper>
          <StartNft />

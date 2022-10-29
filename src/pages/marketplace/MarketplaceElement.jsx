@@ -7,14 +7,11 @@ margin: 10px auto;
 display: grid;
 gap: 1rem;
 transform: translateY(4.2rem);
-
 .head_slider{
     margin: 0 auto;
 }
 @media screen and (max-width: 768px){
  width: 100%;
- overflow-x: scroll;
- grid-template-columns: 1fr;
 }
 `
 export const MarketplaceWrapper = styled.div`
@@ -23,7 +20,6 @@ export const MarketplaceWrapper = styled.div`
  grid-template-columns: repeat(3, 1fr);
  gap: 1.5rem;
  place-items: center;
-
  @media screen and (max-width: 1024px){
   grid-template-columns: 1fr 1fr;
  }
@@ -40,7 +36,6 @@ export const CoinList = styled.div`
     box-shadow: 0 10px 10px rgba(1, 15, 13, 0.123);
     border-radius: 5px;
     color: rgb(4, 57, 118);
-
     .name{
         color: hsl(193deg 74% 57%);
     }
@@ -56,15 +51,12 @@ export const CoinList = styled.div`
         a{
             color: blue;
         }
-
         .text-red{
             color: red;
         }
-
         .text-green{
             color: green;
         }
-
         @media screen and (max-width: 768px){
           display: flex;
           font-size: 14px;
@@ -117,7 +109,6 @@ div{
     align-items: center;
     gap: 1rem;
  }
-
  a{
     color: blue;
  }
@@ -131,13 +122,11 @@ margin-top: 30px;
     align-items: center;
     flex-direction: row-reverse;
     gap: 8px;
-
     p{
         font-size: 20px;
         font-weight: 600;
     }
  }
-
  @media screen and (max-width: 768px){
  }
 `

@@ -53,13 +53,11 @@ function Marketplace() {
     )
   } else {
     return (
-      <>
-        <Navbar />
+    <>
+      <Navbar />
         <MarketTopNews>
-         <Swiper className='head_slider'
-           // install Swiper modules
-           modules={[Autoplay]}
-          //  slidesPerView={4}
+        <Swiper className='head_slider'
+          modules={[Autoplay]}
           breakpoints={{
             414: {
               width: 414,
@@ -74,14 +72,14 @@ function Marketplace() {
             1200: {
               width: 1200,
               slidesPerView: 3,
-              spaceBetween: 50
+              spaceBetween: 60
             },
           }}
           autoplay={{ delay: 5000, disableOnInteraction: false }}>
             {
              trend.map(({title, descImg, head, logoImg}, index) => {
                return(
-                   <SwiperSlide key={index}>
+                <SwiperSlide key={index}>
                     <TopList>
                     <div>
                       <span>
@@ -97,17 +95,17 @@ function Marketplace() {
                       </span>
                      </Logo> 
                     </TopList>   
-                  </SwiperSlide>
+                </SwiperSlide>
                ) 
              })
             }
             
-          </Swiper>
+        </Swiper>
         </MarketTopNews>
         <MarketplaceWrapper>
-        {cryptoList.map((coin, index) => {
+         {cryptoList.map((coin, index) => {
             return (
-                   <CoinList key={index}>
+             <CoinList key={index}>
                     <div className='about'>
                     <span className='t-abt'>
                      <h5>#{coin.market_cap_rank}</h5>
@@ -139,13 +137,13 @@ function Marketplace() {
                       <h6>Last updated: {coin.last_updated}</h6>
                     </div>
 
-                    </CoinList>
+             </CoinList>
             )
-        })}  
-          </MarketplaceWrapper>
+         })}  
+        </MarketplaceWrapper>
         <CoinExchange />
-        <Footer />
-      </>
+      <Footer />
+    </>
   )
 }
   }

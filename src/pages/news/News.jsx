@@ -10,7 +10,7 @@ function News() {
     const [articles, setArticles] = useState([]);
     useEffect(() => {
         const getArticles = async () => {
-            const response = await axios.get(`https://newsapi.org/v2/everything?q=bitcoin&from=${date.getFullYear()+date.getDay()+date.getDay()}&sortBy=popularity&apiKey=f679c22ee8614297a5e1a7a77076a230`);
+            const response = await axios.get(`https://newsapi.org/v2/everything?q=crypto&from=${date.getFullYear()+date.getDay()+date.getDay()}&sortBy=publishedAt&apiKey=f679c22ee8614297a5e1a7a77076a230`);
             setArticles(response.data.articles)
         }
         getArticles()
