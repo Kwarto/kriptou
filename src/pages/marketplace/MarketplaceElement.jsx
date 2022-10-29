@@ -127,6 +127,4 @@ margin-top: 30px;
         font-weight: 600;
     }
  }
- @media screen and (max-width: 768px){
- }
 `
